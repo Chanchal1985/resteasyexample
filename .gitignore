@@ -1,0 +1,3 @@
+#  pattern for intellij files
+*.idea
+*.iml
