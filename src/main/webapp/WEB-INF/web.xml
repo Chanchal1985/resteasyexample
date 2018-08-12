@@ -4,20 +4,23 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-
-
-  <!-- Auto scan REST service -->
+    <!-- Auto scan REST service -->
+    <!--
   <context-param>
     <param-name>resteasy.scan</param-name>
     <param-value>true</param-value>
   </context-param>
+  -->
 
 
   <!-- this need same with resteasy servlet url-pattern -->
+
   <context-param>
     <param-name>resteasy.servlet.mapping.prefix</param-name>
     <param-value>/rest</param-value>
   </context-param>
+
+    <!--
 
   <listener>
     <listener-class>org.jboss.resteasy.plugins.server.servlet.ResteasyBootstrap</listener-class>
@@ -30,8 +33,9 @@
 
   <servlet-mapping>
     <servlet-name>resteasy-servlet</servlet-name>
-    <url-pattern>/rest/*</url-pattern>
+    <url-pattern>/*</url-pattern>
   </servlet-mapping>
+-->
 
 
 </web-app>
